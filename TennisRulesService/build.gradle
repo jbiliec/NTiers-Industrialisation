@@ -1,0 +1,17 @@
+version='1.0.0-SNAPSHOT'
+group='imie'
+apply plugin:'java'
+
+repositories{
+   mavenCentral()
+}
+
+jar{
+   manifest{
+      attributes 'Main-Class':'fr.imie.game.Main'
+   }
+}
+
+dependencies{
+   compile 'javax:javaee-api:7.0'
+}
